@@ -1,0 +1,13 @@
+$base-font-size: 16px;
+$gutter: 1rem;
+
+$font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+'Segoe UI Symbol', 'Noto Color Emoji';
+
+// Bootstrap breakpoints
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+);

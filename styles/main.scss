@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+// Typography
+h1 {
+  @include headline1;
+}
+
+h2 {
+  @include headline2;
+}
+
+h3 {
+  @include headline3;
+}
+
+h4 {
+  @include headline4;
+}
+
+h5 {
+  @include headline5;
+}
+
+h6 {
+  @include headline6;
+}

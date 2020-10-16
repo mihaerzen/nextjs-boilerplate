@@ -3,12 +3,15 @@ import { NextPage } from 'next'
 import beeImage from '~assets/img/getty-bees-honey.jpg'
 
 import Layout from '../components/Layout'
+import styles from './index.module.scss'
 
 const IndexPage: NextPage = () => (
   <Layout title="BeHoney">
-    <h1>Hello 🐝</h1>
+    <div className="container">
+      <h1>Hello 🐝</h1>
 
-    <img alt="Bee" src={beeImage} />
+      <img alt="Bee" src={beeImage} className={styles.image} />
+    </div>
   </Layout>
 )
 
