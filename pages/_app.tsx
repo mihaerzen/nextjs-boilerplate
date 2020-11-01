@@ -4,7 +4,7 @@ import '../styles/main.scss'
 import App, { AppInitialProps } from 'next/app'
 
 class WebApp extends App<AppInitialProps> {
-  render() {
+  render(): JSX.Element {
     const { Component, pageProps } = this.props
 
     return <Component {...pageProps} />

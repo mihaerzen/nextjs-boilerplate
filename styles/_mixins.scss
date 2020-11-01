@@ -47,11 +47,9 @@
 // Headline mixins based on our style guide
 //
 %headline {
-  margin-top: 0;
-  margin-bottom: 0;
   font-stretch: normal;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @mixin headline1 {
