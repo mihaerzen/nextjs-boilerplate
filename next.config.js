@@ -1,5 +1,4 @@
-/* eslint-disable no-undef,@typescript-eslint/no-var-requires */
-
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 
 // Use correct .env file for bundling. By default use .env.local
