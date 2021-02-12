@@ -3,7 +3,9 @@
 const path = require('path')
 
 // Use correct .env file for bundling. By default use .env.local
-const dotEnvPath = [`./.env`, process.env.STAGE || 'local'].filter(Boolean).join('.')
+const dotEnvPath = [`./.env`, process.env.STAGE || 'local']
+  .filter(Boolean)
+  .join('.')
 require('dotenv').config({ path: dotEnvPath })
 
 const ImageminPlugin = require('imagemin-webpack-plugin').default
@@ -28,7 +30,7 @@ module.exports = (phase, defaultConfig) =>
           jpegtran: {
             progressive: true,
           },
-        })
+        }),
       )
 
       return config
