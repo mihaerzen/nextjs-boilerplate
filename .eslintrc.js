@@ -23,8 +23,14 @@ module.exports = {
     // This is not required when using Next.js.
     'react/react-in-jsx-scope': 'off',
     // Auto-sort imports.
-    'simple-import-sort/sort': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     // We're using TypeScript instead of propTypes.
     'react/prop-types': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 }
