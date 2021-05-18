@@ -12,20 +12,20 @@
     "format": "npm run prettier && npm run lint"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^9.0.2",
     "next": "^10.0.6",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.27",
+    "@types/node": "^15.3.0",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
     "eslint": "^7.19.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
