@@ -9,18 +9,21 @@ require('dotenv').config({ path: dotEnvPath })
 
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const composePlugins = require('next-compose-plugins')
-const images = require('next-images')
+const withImages = require('next-images')
 
 module.exports = (phase, defaultConfig) =>
-  composePlugins([[images]], {
+  composePlugins([[withImages]], {
     env: {
       STAGE: process.env.STAGE || 'development',
+    },
+    images: {
+      disableStaticImages: true,
     },
     typescript: {
       ignoreDevErrors: true,
     },
     webpack(config, { dev }) {
-      config.resolve.alias['~assets'] = path.resolve('./assets')
+      config.resolve.alias['~assets'] = path.resolve(__dirname, 'assets')
 
       config.plugins.push(
         new ImageminPlugin({
