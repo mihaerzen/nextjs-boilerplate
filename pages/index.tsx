@@ -1,13 +1,15 @@
+import { Montserrat } from '@next/font/google'
 import { NextPage } from 'next'
 import Image from 'next/image'
 
-import beeImage from '~assets/img/getty-bees-honey.jpg'
-
+import beeImage from '../assets/img/getty-bees-honey.jpg'
 import Layout from '../components/Layout'
 
+const montserrat = Montserrat({ weight: ['300', '500'], subsets: ['latin'] })
+
 const IndexPage: NextPage = () => (
-  <Layout title="BeHoney">
-    <div className="container">
+  <Layout title="Bee">
+    <div className={`container ${montserrat.className}`}>
       <h1>Hello 🐝</h1>
 
       <p>
@@ -20,7 +22,7 @@ const IndexPage: NextPage = () => (
         tellus id placerat.
       </p>
 
-      <Image src={beeImage} width="1024" height="768" alt="Bee" />
+      <Image src={beeImage} width={480} alt="Bee" />
 
       <p>
         Suspendisse risus dui, dictum vel libero vitae, porttitor pretium magna.
