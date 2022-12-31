@@ -22,7 +22,7 @@ const IndexPage: NextPage = () => (
         tellus id placerat.
       </p>
 
-      <Image src={beeImage} width={480} alt="Bee" />
+      <Image src={beeImage} width={480} height={360} alt="Bee" />
 
       <p>
         Suspendisse risus dui, dictum vel libero vitae, porttitor pretium magna.
