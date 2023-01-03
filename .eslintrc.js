@@ -1,4 +1,4 @@
-const {resolve} = require("path");
+const { resolve } = require('path')
 
 module.exports = {
   env: {
@@ -27,6 +27,12 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/function-component-definition': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   settings: {
     react: {
