@@ -5,7 +5,7 @@ import coverImage from '../assets/img/pexels-niki-nagy-1128408.jpg'
 import Layout from '../components/Layout'
 
 const IndexPage: NextPage = () => (
-  <Layout title="Bee">
+  <Layout title="Main Page">
     <div className="max-w-md m-auto">
       <h1>Hello 👋</h1>
 
