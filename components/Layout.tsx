@@ -1,15 +1,19 @@
+import { Montserrat } from '@next/font/google'
+import classNames from 'classnames'
 import Head from 'next/head'
 import React, { FC, PropsWithChildren } from 'react'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
 
 type Props = {
   title?: string
 }
 
-const Layout: FC<PropsWithChildren<Props>> = ({
-  children,
-  title = 'This is the default title',
-}) => (
-  <div>
+const Layout: FC<PropsWithChildren<Props>> = ({ children, title = '' }) => (
+  <div className={classNames(montserrat.variable, 'font-sans')}>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />

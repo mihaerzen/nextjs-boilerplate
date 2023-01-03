@@ -2,20 +2,19 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
     "export": "next export",
-    "start": "next start",
-    "type-check": "tsc",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md,yml,html}\"",
+    "format": "npm run prettier && npm run lint",
     "lint": "eslint . --fix",
-    "format": "npm run prettier && npm run lint"
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md,yml,html}\"",
+    "start": "next start",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@next/font": "^13.1.1",
-    "dotenv": "^16.0.3",
+    "classnames": "^2.3.2",
     "next": "^13.1.1",
-    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.31.3"
@@ -26,6 +25,7 @@
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.31.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -37,7 +37,9 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
+    "postcss": "^8.4.20",
     "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.9.4"
   },
   "license": "MIT"
