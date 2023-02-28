@@ -7,9 +7,10 @@
     "export": "next export",
     "format": "npm run prettier && npm run lint",
     "lint": "eslint . --fix",
+    "test": "npm run lint && npm run type-check",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md,yml,html}\"",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@next/font": "^13.2.1",
