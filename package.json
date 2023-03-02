@@ -14,7 +14,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/font": "^13.2.1",
+    "@next/font": "^13.2.3",
     "classnames": "^2.3.2",
     "next": "^13.2.1",
     "react": "^18.2.0",
