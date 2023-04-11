@@ -1,4 +1,4 @@
-import { Montserrat } from '@next/font/google'
+import { Montserrat } from 'next/font/google'
 import classNames from 'classnames'
 import Head from 'next/head'
 import React, { FC, PropsWithChildren } from 'react'
