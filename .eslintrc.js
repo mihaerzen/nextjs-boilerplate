@@ -41,7 +41,18 @@ module.exports = {
         },
       },
     ],
+    'import/prefer-default-export': 'off',
+    'import/no-default-export': 'error',
   },
+  overrides: [
+    {
+      files: ['./pages/**/*.ts{,x}'],
+      rules: {
+        'import/prefer-default-export': 'error',
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',
