@@ -12,7 +12,10 @@ type Props = {
   title?: string
 }
 
-const Layout: FC<PropsWithChildren<Props>> = ({ children, title = '' }) => (
+export const Layout: FC<PropsWithChildren<Props>> = ({
+  children,
+  title = '',
+}) => (
   <div className={classNames(montserrat.variable, 'font-sans')}>
     <Head>
       <title>{title}</title>
@@ -22,5 +25,3 @@ const Layout: FC<PropsWithChildren<Props>> = ({ children, title = '' }) => (
     {children}
   </div>
 )
-
-export default Layout

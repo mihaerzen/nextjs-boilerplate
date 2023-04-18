@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 
 import coverImage from '../assets/img/pexels-niki-nagy-1128408.jpg'
-import Layout from '../components/Layout'
+import { Layout } from '../components/Layout'
 
 const IndexPage: NextPage = () => (
   <Layout title="Main Page">
