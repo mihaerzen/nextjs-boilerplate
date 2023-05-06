@@ -1,8 +1,7 @@
 import { NextPage } from 'next'
-import React from 'react'
+import Image from 'next/image'
 
-// import Image from 'next/image'
-// import coverImage from '../assets/img/pexels-niki-nagy-1128408.jpg'
+import coverImage from '../assets/img/pexels-niki-nagy-1128408.jpg'
 import { Layout } from '../components/Layout'
 
 const IndexPage: NextPage = () => (
@@ -20,7 +19,7 @@ const IndexPage: NextPage = () => (
         tellus id placerat.
       </p>
 
-      {/* <Image src={coverImage} width={448} sizes="448px" alt="cover image" /> */}
+      <Image src={coverImage} width={448} sizes="448px" alt="cover image" />
 
       <p>
         Suspendisse risus dui, dictum vel libero vitae, porttitor pretium magna.
