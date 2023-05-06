@@ -1,6 +1,7 @@
 import '../styles/global.css'
 
 import App, { AppInitialProps } from 'next/app'
+import React from 'react'
 
 class WebApp extends App<AppInitialProps> {
   render(): JSX.Element {
