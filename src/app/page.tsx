@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 
-import coverImage from '@/assets/pexels-niki-nagy-1128408.jpg'
+import coverImage from './pexels-niki-nagy-1128408.jpg'
 
 const IndexPage: NextPage = () => (
   <div className="max-w-md m-auto">
