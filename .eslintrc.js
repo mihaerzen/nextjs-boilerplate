@@ -27,6 +27,14 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/function-component-definition': 'off',
+    // These are here for better debugging with react tools
+    'react/display-name': [
+      'error',
+      {
+        ignoreTranspilerName: true,
+        checkContextObjects: true,
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
@@ -46,7 +54,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['./pages/**/*.ts{,x}'],
+      files: ['./pages/**/*.ts{,x}', './src/app/**/*.ts{,x}'],
       rules: {
         'import/prefer-default-export': 'error',
         'import/no-default-export': 'off',
