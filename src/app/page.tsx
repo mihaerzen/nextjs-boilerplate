@@ -1,37 +1,33 @@
+import { MagicWandIcon } from '@radix-ui/react-icons'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Link from 'next/link'
 
-import coverImage from './pexels-niki-nagy-1128408.jpg'
+import { ArtworksTable } from '@/components/ArtworksTable/ArtworksTable'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+export const dynamic = 'force-dynamic'
 
 const IndexPage: NextPage = () => (
-  <div className="max-w-md m-auto">
-    <h1>Hello 👋</h1>
+  <div className="max-w-xl m-auto pt-8">
+    <Alert className="mb-4">
+      <AlertTitle>
+        <MagicWandIcon className="inline-block" /> Heads up!
+      </AlertTitle>
+      <AlertDescription>
+        This example uses the{' '}
+        <Link
+          className="underline"
+          href="https://api.artic.edu/docs/#introduction"
+          target="_blank"
+        >
+          API from Art Institute of Chicago
+        </Link>
+        !
+      </AlertDescription>
+    </Alert>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quam sem,
-      mattis quis dapibus in, maximus at augue. Phasellus at risus faucibus
-      lorem porttitor placerat. Proin et elementum arcu. Pellentesque habitant
-      morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-      Nunc ullamcorper enim eget ligula scelerisque mattis. Integer convallis
-      maximus porta. Fusce varius ac nisi vitae euismod. Mauris rutrum in tellus
-      id placerat.
-    </p>
-
-    <Image src={coverImage} width={448} sizes="448px" alt="cover image" />
-
-    <p>
-      Suspendisse risus dui, dictum vel libero vitae, porttitor pretium magna.
-      Duis nec quam vel arcu ornare condimentum in nec ante. Nullam ut libero at
-      sem tempus blandit vel id arcu. Vivamus at lobortis justo. Praesent metus
-      mi, cursus convallis sollicitudin eu, pharetra ac dui. Phasellus vel eros
-      auctor, dignissim libero eget, egestas lacus. Nulla magna leo, vehicula
-      non neque nec, molestie bibendum risus. Nam ut rhoncus orci. Nullam lectus
-      libero, vestibulum et venenatis vitae, lacinia eget tortor. Curabitur
-      consectetur neque quis velit ornare blandit ut eu urna. Praesent
-      condimentum viverra elit. Aenean justo ligula, posuere eu tortor vel,
-      maximus posuere purus. Praesent augue justo, pulvinar sed lectus quis,
-      hendrerit eleifend tellus.
-    </p>
+    <ArtworksTable />
   </div>
 )
 

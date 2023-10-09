@@ -1,8 +1,9 @@
 import './global.css'
 
-import classNames from 'classnames'
 import { Montserrat } from 'next/font/google'
 import React, { FC, PropsWithChildren } from 'react'
+
+import { cn } from '@/lib/utils'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -11,9 +12,7 @@ const montserrat = Montserrat({
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en">
-    <body className={classNames(montserrat.variable, 'font-sans')}>
-      {children}
-    </body>
+    <body className={cn(montserrat.variable, 'font-sans')}>{children}</body>
   </html>
 )
 
